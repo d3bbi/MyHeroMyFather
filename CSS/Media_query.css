@@ -1,0 +1,209 @@
+/*media queries apply different styles to the elements in order to adjust them to the different screen devices*/
+
+/*all the below property will be active when the window is 1100px wide or less*/
+@media screen and (max-width: 1100px){
+    /*I made the container wider so the content goes more in the middle of the screen*/
+    .ackn_ref {
+            padding: 10% 5%;
+       }
+    
+    /*the form in the "contact page gets a bit wider so it s easier to fill it in*/
+    .form_container {
+        width: 65%;
+        margin: 18% auto;
+    }
+
+    /*the text inside the container in the life page from fixed become relatives. This moves the pictures on the bottom of the paragraph*/
+    .container_main_life {
+        position: relative;
+    }
+
+    /*the paragraph is getting wider and is moved in the middle*/
+    .text_life {
+        width: 88%;
+        margin: auto;
+    }
+
+    /*I put the overflow as auto, this way the user can horizontally scroll the picture.*/
+    .images_life {
+        width: 100%;
+        background-color: #403737;
+        overflow: auto;
+        white-space:nowrap;
+        margin: 0;
+    }
+    .images_life div {
+        display: inline;
+    }
+
+    /*here i remove the black background*/
+    .images_life img{
+        background-color: transparent;
+        padding: 2px;
+        width: 35%;
+        display: inline;
+    }
+
+    .item_head p{
+        text-align: left;
+    }
+
+    .profile_container{
+        display: contents;
+    }
+    
+    }
+
+/*all the below property will be active when the window is 900px wide or less*/
+@media screen and (max-width: 900px){
+.txt_title h1{
+        line-height: 4rem;
+ }
+/*the text take now more space in the page*/
+.item_home {
+  padding: 2rem 7%;
+}
+.container_item {
+    width: 91%;
+}
+
+/*the container gets wider*/
+#container_hobbies {
+    width: 95%;
+}
+
+/*I remove the "line" of the timeline*/
+#timeline:before {
+    display: none;
+}
+#timeline section:after {
+    display: none;
+}
+/*the small container on the side of the header of the text-boxes of the job page are removed*/
+#timeline section:nth-child(1n+1) div.inner h2:after {
+    display: none;
+}
+#timeline section:nth-child(2n+2) h2:after {
+    display: none;
+  }
+
+/*the container with the year in the job page is moved on the left*/
+.date {
+   position: relative;
+   left: 0;
+}
+
+
+.inner{
+    display: contents;
+}
+
+.text_heading_job {
+    width: 57%;
+}
+
+.ref_container {
+    width: 90%;
+}
+
+.ackn_ref {
+    padding: 10% 2%;
+}
+.form_container {
+    width: 87%;
+    margin: 18% auto;
+}
+}
+/*all the below property will be active when the window is 700px wide or less*/
+@media screen and (max-width: 700px){
+
+p{
+    text-align: left;
+}
+
+/*the navigation bar is removed from the visible page*/
+.container_nav{
+    background-color: transparent;
+}
+.container_nav ul li {
+    display: none;
+}
+.container_nav ul li a{
+    color: #fff;
+}
+
+/*A small label appear on the left of the page. When clicked it display the nav bar menu*/
+.container_nav label{
+    display: flex;
+    color: white;
+    font-style: normal;
+    font-size: 1.2em;
+    padding-left: 5%;
+}
+
+.container_nav ul li {
+    display: flex;
+  }
+ .container_nav ul li {
+    border-top: 1px solid #333;
+  }
+  .container_nav ul li a:after {
+      display: none;
+  }
+
+ .container_nav ul {
+    display: none;
+  }
+
+/*when the label that is an input type"checkbox", when checked it display the <ul> element in a position absolute*/
+.container_nav input:checked ~ ul {
+    display: block;
+    color: #0e0b0b;
+    background-color: #151111f5;
+    margin-left: 50px;
+    position: absolute;
+}
+
+.dropdown:hover .dropdown_content {
+    display: block;
+    margin-left: 106px;
+}
+.txt_title h1{
+    line-height: 3rem;
+}
+.text_heading_job{
+    width: 85%;
+}
+
+.heading_page{
+    line-height: 3em;
+    text-align: left;
+    padding-left: 10%;
+}
+.item_head span{
+    text-align: left;
+}
+.main_footer {
+    display: inline-block;
+    text-align: center;
+    }
+.main_footer p{
+    text-align: center;
+}
+.main_footer img{
+    width: 20%;
+    margin: auto;
+}
+.footer_links{
+  display: none;
+}
+.footer_icon {
+    margin: 0;
+}
+.footer_email{
+    margin: auto;
+}
+.ackn_ref{
+    margin: 0;
+}
+}

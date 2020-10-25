@@ -1,0 +1,161 @@
+<!--
+Griffith College - Computing Science
+Client Side Web Development - Assignment 03
+Deborah Rimei - 3015579
+10/02/2020
+-->
+
+<!DOCTYPE html>
+<!--here I used the "lang" attribute inside the <html> tag to declare the language of the Webpage-->
+<html lang="en">
+<!--I am using the <head> element to contain information about my page.-->
+
+<head>
+	<meta charset="utf-8">
+	<!--the <title> element contain the information that will be shown on the tab of the browser, making easier to navigate between different webpages-->
+	<title>Deborah Rimei 3015579</title>
+
+	<!--the meta viewport element gives the browser instruction on how to control the dimensions and scaling of the page. Instructions are given using the method media queries. See the mediaQuery.css to see at which size of the screen the elements change-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!--I used the link element to link different document to my HTML. For this assignment I used two stylesheets (one for css layout and the other to manage the responsiveness) and I imported some google fonts. I also used a library for the social media buttons-->
+	<link rel="stylesheet" type="text/css" href="CSS/Style.css">
+	<link rel="stylesheet" type="text/css" href="CSS/Media_query.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link
+		href="https://fonts.googleapis.com/css?family=Niconne%7CUbuntu%7CMartel+Sans%7CRoboto:300%7CMontserrat&display=swap"
+		rel="stylesheet">
+</head>
+
+<!--The <body> element contains all information about the website that will be visualised in the main page-->
+
+<body>
+
+	<div id="page">
+
+		<!--I am using the header element to display the most important heading of my page.-->
+		<header>
+			
+				<!--the nav bar contains the main navigation bar on top of the page. It includes an unordered list of elements -->
+				<nav class="container_nav">
+					<label for="hamburger">&#9776;</label>
+					<input type="checkbox" id="hamburger"/>
+					<ul>
+						<li><a href="index.html" data-hover="Home">Home</a></li>
+						<!--the <li> element class="dropdown" contain a nested unordered list of elements. This, with the help of cs, creates the dropdown effect-->
+						<li class="dropdown">
+							<a href="life.html" data-hover="My father's ">My father's ⯆</a>
+							<ul class="dropdown_content">
+								<li><a href="life.html">Life</a></li>
+								<li><a href="hobbies.html">Hobbies</a></li>
+								<li><a href="job.html">Job</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="aboutMe.html" data-hover="About ">About ⯆</a>
+							<ul class="dropdown_content">
+								<li><a href="aboutMe.html">About me</a></li>
+								<li><a href="references.html">References</a></li>
+								<li><a href="contact.html">Contact me</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+		</header>
+
+
+		<!--I have wrapped the picture of myself and my description within three div elements for layout style purposes. The first div with attribute class="bio" contain also the quote.-->
+		<div class="bio">
+			<div class="profile_container">
+				<div class="profile_title">
+
+					<div id="pic_profile">
+
+						<img src="images/DCU_black.jpg" alt="Picture of me smiling in front of the camera"
+							title="Ciao, that's me, Deborah">
+					</div>
+					<div class="profile_description">
+						<h1>Deborah Rimei</h1>
+						<p>Computer Science Student</p>
+					</div>
+				<!--In the link I added the attribute target="blank" so the link opens in another page-->
+					<div class=profile_icon>
+						<a href="https://www.facebook.com/Deborah.Rimei" target="_blank" class="fa fa-facebook"></a>
+						<a href="https://twitter.com/deborahrimei" target="_blank" class="fa fa-twitter"></a>
+						<a href="https://www.linkedin.com/in/deborah-rimei?originalSubdomain=ie" target="_blank" class="fa fa-linkedin"></a>
+						<a href="https://www.instagram.com/deborah_rimei/?hl=en" target="_blank" class="fa fa-instagram"></a>
+					</div>
+					<a href="contact.html" class="btn">Contact me</a>
+				</div>
+
+				<div id="about_me">
+					<h2>About me</h2>
+					<p>My name is Deborah and I am originally from Cattolica, a little gem of the Adriatic coast in
+						Italy. In 2015, after high school, I decided to leave my nest and fly to Dublin. For who is
+						planning to visit Dublin, you better watch out! After one or two pints of Guinness in one of its
+						traditional pubs (they still have live music!) you could find yourself dancing with new unknown
+						friends...or with your life soul mate. You can now imagine why, after four years, I am still
+						leaving in
+						the green land.<br> I am really easy-going and positive person. I like to do sports and keep
+						myself
+						active as well as chill-out with friends watching movies and eating biscuits (my weakness spot).
+						<br>This year, though, things will be different. I had the courage to come back to college to
+						study
+						Computer Science. My hope is that, in 4 years from now, I will look back and say: "It has been
+						hard,
+						but come back to college was the best decision of my life. Congratulotions for your degree".
+					</p>
+				</div>
+			</div>
+		</div>
+		<!--I wrapped the quote inside a div that carry an id attribute <div class="container">-->
+		<div class="quote_container">
+
+			<blockquote cite="http://www.twainquotes.com/Discovery.html">
+				<p>Twenty years from now you will be more disappointed by the things that you didn't do than by the
+					ones
+					you did do.<br>So throw off the bowlines.<br>Sail away from the safe harbor.<br>Catch the trade
+					winds in your sails. <br>Explore. Dream. Discover.</p><span class="quote_author">Mark
+					Twain</span>
+			</blockquote>
+		</div>
+
+	</div>
+		<!--At the end I am using a footer to display authorship and copyrights information, to link the main pages and give some contact info.-->	
+		<footer class="main_footer">
+			<div class="footer_name">
+				<p> Deborah Rimei</p>
+				<p>Computing Science</p>
+				<p>Student number: 3015579</p>
+				<a href="https://www.griffith.ie/"><img
+						src="https://www.griffith.ie/sites/all/themes/griffith/images/xgriffith-logo-white-trans.png.pagespeed.ic.Txm3d4VeuK.webp"
+						alt="Griffith College logo" title="Visit griffith.ie"></a>
+			</div>
+		
+			<div class="footer_links">
+				<h6>About</h6>
+				<ul>
+					<li><a href="life.html">My father</a></li>
+					<li><a href="aboutMe.html">About me</a></li>
+					<li><a href="references.html">References</a></li>
+				</ul>
+				<a href="#page">Back to the top ⮥</a>
+			</div>
+		
+			<div class=footer_icon>
+				<p>Stay in touch!</p>
+				<a href="https://www.facebook.com/Deborah.Rimei" target="_blank" class="fa fa-facebook"></a>
+				<a href="https://twitter.com/deborahrimei" target="_blank" class="fa fa-twitter"></a>
+				<a href="https://www.linkedin.com/in/deborah-rimei?originalSubdomain=ie" target="_blank" class="fa fa-linkedin"></a>
+				<a href="https://www.instagram.com/deborah_rimei/?hl=en" target="_blank" class="fa fa-instagram"></a>
+				<div class="footer_email">
+					<a href="contact.html"><img src="Images/letter_email.png" alt="image of a letter">Send me an email</a></div>
+			</div>
+			<div class="footer_bottom">
+				<p>&copy; Copyrights Deborah Rimei</p>
+			</div>
+		</footer>
+
+</body>
+
+</html>
