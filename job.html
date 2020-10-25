@@ -8,209 +8,280 @@ Deborah Rimei - 3015579
 <!DOCTYPE html>
 <!--here I used the "lang" attribute inside the <html> tag to declare the language of the Webpage-->
 <html lang="en">
-<!--I am using the <head> element to contain information about my page.-->
+  <!--I am using the <head> element to contain information about my page.-->
 
-<head>
-	<meta charset="utf-8">
-	<!--the <title> element contain the information that will be shown on the tab of the browser, making easier to navigate between different webpages-->
-	<title>Deborah Rimei 3015579</title>
+  <head>
+    <meta charset="utf-8" />
+    <!--the <title> element contain the information that will be shown on the tab of the browser, making easier to navigate between different webpages-->
+    <title>MyHero - job</title>
 
-	<!--the meta viewport element gives the browser instruction on how to control the dimensions and scaling of the page. Instructions are given using the method media queries. See the mediaQuery.css to see at which size of the screen the elements change-->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--the meta viewport element gives the browser instruction on how to control the dimensions and scaling of the page. Instructions are given using the method media queries. See the mediaQuery.css to see at which size of the screen the elements change-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	<!--I used the link element to link different document to my HTML. For this assignment I used two stylesheets (one for css layout and the other to manage the responsiveness) and I imported some google fonts. I also used a library for the social media buttons-->
+    <!--I used the link element to link different document to my HTML. For this assignment I used two stylesheets (one for css layout and the other to manage the responsiveness) and I imported some google fonts. I also used a library for the social media buttons-->
 
-	<link rel="stylesheet" type="text/css" href="CSS/Style.css">
-	<link rel="stylesheet" type="text/css" href="CSS/Media_query.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link
-		href="https://fonts.googleapis.com/css?family=Niconne%7CUbuntu%7CMartel+Sans%7CRoboto:300%7CMontserrat&display=swap"
-		rel="stylesheet">
-</head>
-<!--The <body> element contains all information about the website that will be visualised in the main page-->
-<body>
-	<div id="page_job">
-		<!--I am using the header element to display the most important heading of my page.-->
-		<header>
+    <link rel="stylesheet" type="text/css" href="CSS/Style.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/Media_query.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Niconne%7CUbuntu%7CMartel+Sans%7CRoboto:300%7CMontserrat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <!--The <body> element contains all information about the website that will be visualised in the main page-->
+  <body>
+    <div id="page_job">
+      <!--I am using the header element to display the most important heading of my page.-->
+      <header>
+        <!--the nav bar contains the main navigation bar on top of the page. It includes an unordered list of elements -->
+        <nav class="container_nav">
+          <label for="hamburger">&#9776;</label>
+          <input type="checkbox" id="hamburger" />
+          <ul>
+            <li><a href="index.html" data-hover="Home">Home</a></li>
+            <!--the <li> element class="dropdown" contain a nested unordered list of elements. This, with the help of cs, creates the dropdown effect-->
+            <li class="dropdown">
+              <a href="life.html" data-hover="My father's ">My father's ⯆</a>
+              <ul class="dropdown_content">
+                <li><a href="life.html">Life</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="job.html">Job</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="aboutMe.html" data-hover="About ">About ⯆</a>
+              <ul class="dropdown_content">
+                <li><a href="aboutMe.html">About me</a></li>
+                <li><a href="references.html">References</a></li>
+                <li><a href="contact.html">Contact me</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </header>
 
-				<!--the nav bar contains the main navigation bar on top of the page. It includes an unordered list of elements -->
-				<nav class="container_nav">
-					<label for="hamburger">&#9776;</label>
-					<input type="checkbox" id="hamburger"/>
-					<ul>
-						<li><a href="index.html" data-hover="Home">Home</a></li>
-						<!--the <li> element class="dropdown" contain a nested unordered list of elements. This, with the help of cs, creates the dropdown effect-->
-						<li class="dropdown">
-							<a href="life.html" data-hover="My father's ">My father's ⯆</a>
-							<ul class="dropdown_content">
-								<li><a href="life.html">Life</a></li>
-								<li><a href="hobbies.html">Hobbies</a></li>
-								<li><a href="job.html">Job</a></li>
-							</ul>
-						</li>
-						<li class="dropdown">
-							<a href="aboutMe.html" data-hover="About ">About ⯆</a>
-							<ul class="dropdown_content">
-								<li><a href="aboutMe.html">About me</a></li>
-								<li><a href="references.html">References</a></li>
-								<li><a href="contact.html">Contact me</a></li>
-							</ul>
-						</li>
-					</ul>
-				</nav>
-		</header>
+      <section>
+        <div class="wrap_container_job">
+          <div class="heading_job">
+            <h2>My father's <span>Job</span></h2>
+          </div>
+          <div class="text_heading_job">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
 
-		<section>
-			<div class="wrap_container_job">
-				<div class="heading_job">
-					<h2>My father's <span>Job</span></h2>
-				</div>
-				<div class="text_heading_job">
-					<p>The career of my father was quite linear, starting from seasonal jobs to be one important member
-						of “Fico World”. He does not have any special title or degree but his ability to empathize with
-						other people and his organizational skills brought him to rump up pretty fast.</p>
-				</div>
+          <aside class="sidebar">
+            <h2>My father's career.</h2>
+            <div class="aside_box">
+              <ul>
+                <li><a class="link" href="#1979">1979</a></li>
+                <li><a class="link" href="#1984">1984</a></li>
+                <li><a class="link" href="#1991">1991</a></li>
+                <li><a class="link" href="#1995">1995</a></li>
+                <li><a class="link" href="#2002">2002</a></li>
+                <li><a class="link" href="#2014">2014</a></li>
+              </ul>
+            </div>
+          </aside>
+        </div>
+      </section>
 
-				<aside class="sidebar">
-					<h2>My father's career.</h2>
-					<div class="aside_box">
-						<ul>
-							<li><a class="link" href="#1979">1979</a></li>
-							<li><a class="link" href="#1984">1984</a></li>
-							<li><a class="link" href="#1991">1991</a></li>
-							<li><a class="link" href="#1995">1995</a></li>
-							<li><a class="link" href="#2002">2002</a></li>
-							<li><a class="link" href="#2014">2014</a></li>
-						</ul>
-					</div>
-				</aside>
-			</div>
-		</section>
+      <div id="timeline">
+        <section>
+          <div class="inner">
+            <span class="date">
+              <span class="year">1969</span>
+            </span>
+            <h2 id="1969">First job, on the beach</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum..<a
+                href="https://www.cattolicaturismo.com/en"
+                target="_blank"
+                ><img
+                  src="https://www.cattolicaturismo.com/images/logo.png"
+                  title="check info of Cattolia"
+                  alt="logo of Cattolica tourism webpage"
+              /></a>
+            </p>
+          </div>
+        </section>
+        <section>
+          <div class="inner">
+            <span class="date">
+              <span class="year">1984</span>
+            </span>
+            <h2 id="1984">Barman at the famous "Bar Peledo"</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.<a
+                href="https://www.barpeledo.it/"
+                target="_blank"
+                ><img
+                  src="https://www.barpeledo.it/wp-content/themes/amwp/images/bar-peledo-cattolica.png?ver=1.1"
+                  title="check Bar Peledo"
+                  alt="Bar Peledo logo"
+              /></a>
+            </p>
+          </div>
+        </section>
+        <section>
+          <div class="inner">
+            <span class="date">
+              <span class="year">1991</span>
+            </span>
+            <h2 id="1991">Clerk for "Coop" supermarket</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.<img
+                src="https://upload.wikimedia.org/wikipedia/commons/8/80/Logo_Coop_Alleanza_3.0.jpg"
+                alt="logo of the italian supermarket Coop"
+              />
+            </p>
+          </div>
+        </section>
+        <section>
+          <div class="inner">
+            <span class="date">
+              <span class="year">1995</span>
+            </span>
+            <h2 id="1995">Promotion in Ravenna, Italy</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </section>
+        <section>
+          <div class="inner">
+            <span class="date">
+              <span class="year">2002</span>
+            </span>
+            <h2 id="2002">New office in Bologna</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </section>
+        <section>
+          <div class="inner">
+            <span class="date">
+              <span class="year">2014</span>
+            </span>
+            <h2 id="2014">Fico World</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.<a
+                href="https://www.eatalyworld.it/en/"
+                target="_blank"
+                ><img
+                  src="https://www.eatalyworld.it/img/svg/logo-fico.svg"
+                  alt="logo Fico Eataly World"
+                  title="check Fico World"
+              /></a>
+            </p>
+          </div>
+        </section>
+      </div>
+    </div>
 
-		<div id="timeline">
-			<section>
-				<div class="inner">
-					<span class="date">
-						<span class="year">1969</span>
-					</span>
-					<h2 id="1969">First job, on the beach</h2>
-					<p>Marcello started his first job at the age of 13. He was a beachboy and was helping the owner of
-						the beach to maintain the area clean and to bring the clients to the rented chairs and umbrellas.
-						Summers in my seaside village are great. A lot of tourists are coming in Cattolica to spend few
-						weeks of their holidays and enjoy the sun and the good spirit of the inhabitants. Becuase of the
-						presence of many german tourist my father had also the opportunity to learn a new language.<a
-							href="https://www.cattolicaturismo.com/en" target="_blank"><img
-								src="https://www.cattolicaturismo.com/images/logo.png" title="check info of Cattolia"
-								alt="logo of Cattolica tourism webpage"></a></p>
-				</div>
-			</section>
-			<section>
-				<div class="inner">
-					<span class="date">
-						<span class="year">1984</span>
-					</span>
-					<h2 id="1984">Barman at the famous "Bar Peledo"</h2>
-					<p>After few seasonal jobs in hotels and restaurants he started working as a barman in one of the
-						central bars of Cattolica. In “Bar Peledo” my father learned the meaning of good friendship and
-						how to make fabulous cocktails. He still in contact with all the team. Last year they also went
-						for a dinner together.<a href="https://www.barpeledo.it/" target="_blank"><img
-								src="https://www.barpeledo.it/wp-content/themes/amwp/images/bar-peledo-cattolica.png?ver=1.1"
-								title="check Bar Peledo" alt="Bar Peledo logo"></a></p>
-				</div>
-			</section>
-			<section>
-				<div class="inner">
-					<span class="date">
-						<span class="year">1991</span>
-					</span>
-					<h2 id="1991">Clerk for "Coop" supermarket</h2>
-					<p>My father was already in relationship with my mother (they got married the year after) and they
-						started working in a near Supermarket chain called Coop. In Coop my father showed good
-						organizational and technical skills and after few years he got promoted to work in Coop head
-						office.<img src="https://upload.wikimedia.org/wikipedia/commons/8/80/Logo_Coop_Alleanza_3.0.jpg"
-							alt="logo of the italian supermarket Coop"></p>
-				</div>
-			</section>
-			<section>
-				<div class="inner">
-					<span class="date">
-						<span class="year">1995</span>
-					</span>
-					<h2 id="1995">Promotion in Ravenna, Italy</h2>
-					<p>The year of my birth my father moved to Ravenna, a city distant one hour by car from our home. I
-						never fully understood what exactly his role was. I had hard times in kindergarten to answer the
-						question "what is your father's job?". I had to ask my father what exactly his job was about for
-						the sake of this website. As I understood, he was following the new openings, managing
-						the renovations and organizing the stock of the supermarket. What I am sure of is that he was
-						always traveling around Italy and most of the time he was bringing delicious souvenirs.</p>
-				</div>
-			</section>
-			<section>
-				<div class="inner">
-					<span class="date">
-						<span class="year">2002</span>
-					</span>
-					<h2 id="2002">New office in Bologna</h2>
-					<p>He moved in the head office of Coop in Bologna. The city was still quite far from our home, but
-						this never bothered my father. He once said to me that he always wanted to work and travel at
-						the same time and for him have to drive one hour every day is a good compromise. The job in
-						Bologna was very similar to the one in Ravenna, but the best was yet to come.</p>
-				</div>
-			</section>
-			<section>
-				<div class="inner">
-					<span class="date">
-						<span class="year">2014</span>
-					</span>
-					<h2 id="2014">Fico World</h2>
-					<p>In 2014 my father has been hired in the project “Fico world”, the world's largest agri-food park.
-						The park, situated in Bologna, host factory of one of the major Italian food brands, and give
-						the opportunity to the visitors to explore how crops grow, how factories use them to make
-						traditional products and taste the final result in the different restaurants around the park. My father has been
-						involved since the start in all the stages of the project. His main role was to inform the
-						Italian food and drink companies about the park and to convince them to bring their products in the park.<a href="https://www.eatalyworld.it/en/"
-							target="_blank"><img src="https://www.eatalyworld.it/img/svg/logo-fico.svg"
-								alt="logo Fico Eataly World" title="check Fico World"></a></p>
-				</div>
-			</section>
-		</div>
-	</div>
+    <!--At the end I am using a footer to display authorship and copyrights information, to link the main pages and give some contact info.-->
+    <footer class="main_footer">
+      <div class="footer_name">
+        <p>Deborah Rimei</p>
+        <p>Computing Science</p>
+        <p>Student number: 3015579</p>
+        <a href="https://www.griffith.ie/"
+          ><img
+            src="https://www.griffith.ie/sites/all/themes/griffith/images/xgriffith-logo-white-trans.png.pagespeed.ic.Txm3d4VeuK.webp"
+            alt="Griffith College logo"
+            title="Visit griffith.ie"
+        /></a>
+      </div>
 
-		<!--At the end I am using a footer to display authorship and copyrights information, to link the main pages and give some contact info.-->	
-		<footer class="main_footer">
-			<div class="footer_name">
-				<p> Deborah Rimei</p>
-				<p>Computing Science</p>
-				<p>Student number: 3015579</p>
-				<a href="https://www.griffith.ie/"><img
-						src="https://www.griffith.ie/sites/all/themes/griffith/images/xgriffith-logo-white-trans.png.pagespeed.ic.Txm3d4VeuK.webp"
-						alt="Griffith College logo" title="Visit griffith.ie"></a>
-			</div>
-		
-			<div class="footer_links">
-				<h6>About</h6>
-				<ul>
-					<li><a href="life.html">My father</a></li>
-					<li><a href="aboutMe.html">About me</a></li>
-					<li><a href="references.html">References</a></li>
-				</ul>
-				<a href="#page_job">Back to the top ⮥</a>
-			</div>
-		
-			<div class=footer_icon>
-				<p>Stay in touch!</p>
-				<a href="https://www.facebook.com/Deborah.Rimei" target="_blank" class="fa fa-facebook"></a>
-				<a href="https://twitter.com/deborahrimei" target="_blank" class="fa fa-twitter"></a>
-				<a href="https://www.linkedin.com/in/deborah-rimei?originalSubdomain=ie" target="_blank" class="fa fa-linkedin"></a>
-				<a href="https://www.instagram.com/deborah_rimei/?hl=en" target="_blank" class="fa fa-instagram"></a>
-				<div class="footer_email">
-					<a href="contact.html"><img src="Images/letter_email.png" alt="image of a letter">Send me an email</a></div>
-			</div>
-			<div class="footer_bottom">
-				<p>&copy; Copyrights Deborah Rimei</p>
-			</div>
-		</footer>
+      <div class="footer_links">
+        <h6>About</h6>
+        <ul>
+          <li><a href="life.html">My father</a></li>
+          <li><a href="aboutMe.html">About me</a></li>
+          <li><a href="references.html">References</a></li>
+        </ul>
+        <a href="#page_job">Back to the top ⮥</a>
+      </div>
 
-</body>
-
+      <div class="footer_icon">
+        <p>Stay in touch!</p>
+        <a
+          href="https://www.facebook.com/Deborah.Rimei"
+          target="_blank"
+          class="fa fa-facebook"
+        ></a>
+        <a
+          href="https://twitter.com/deborahrimei"
+          target="_blank"
+          class="fa fa-twitter"
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/deborah-rimei?originalSubdomain=ie"
+          target="_blank"
+          class="fa fa-linkedin"
+        ></a>
+        <a
+          href="https://www.instagram.com/deborah_rimei/?hl=en"
+          target="_blank"
+          class="fa fa-instagram"
+        ></a>
+        <div class="footer_email">
+          <a href="contact.html"
+            ><img src="Images/letter_email.png" alt="image of a letter" />Send
+            me an email</a
+          >
+        </div>
+      </div>
+      <div class="footer_bottom">
+        <p>&copy; Copyrights Deborah Rimei</p>
+      </div>
+    </footer>
+  </body>
 </html>
