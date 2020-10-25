@@ -8,151 +8,196 @@ Deborah Rimei - 3015579
 <!DOCTYPE html>
 <!--here I used the "lang" attribute inside the <html> tag to declare the language of the Webpage-->
 <html lang="en">
-<!--I am using the <head> element to contain information about my page.-->
+  <!--I am using the <head> element to contain information about my page.-->
 
-<head>
-	<meta charset="utf-8">
-	<!--the <title> element contain the information that will be shown on the tab of the browser, making easier to navigate between different webpages-->
-	<title>Deborah Rimei 3015579</title>
+  <head>
+    <meta charset="utf-8" />
+    <!--the <title> element contain the information that will be shown on the tab of the browser, making easier to navigate between different webpages-->
+    <title>MyHero - life</title>
 
-	<!--the meta viewport element gives the browser instruction on how to control the dimensions and scaling of the page. Instructions are given using the method media queries. See the mediaQuery.css to see at which size of the screen the elements change-->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--the meta viewport element gives the browser instruction on how to control the dimensions and scaling of the page. Instructions are given using the method media queries. See the mediaQuery.css to see at which size of the screen the elements change-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	<!--I used the link element to link different document to my HTML. For this assignment I used two stylesheets (one for css layout and the other to manage the responsiveness) and I imported some google fonts. I also used a library for the social media buttons-->
+    <!--I used the link element to link different document to my HTML. For this assignment I used two stylesheets (one for css layout and the other to manage the responsiveness) and I imported some google fonts. I also used a library for the social media buttons-->
 
-	<link rel="stylesheet" type="text/css" href="CSS/Style.css">
-	<link rel="stylesheet" type="text/css" href="CSS/Media_query.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link
-		href="https://fonts.googleapis.com/css?family=Niconne%7CUbuntu%7CMartel+Sans%7CRoboto:300%7CMontserrat&display=swap"
-		rel="stylesheet">
-</head>
-<!--The <body> element contains all information about the website that will be visualised in the main page-->
+    <link rel="stylesheet" type="text/css" href="CSS/Style.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/Media_query.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Niconne%7CUbuntu%7CMartel+Sans%7CRoboto:300%7CMontserrat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <!--The <body> element contains all information about the website that will be visualised in the main page-->
 
-<body>
-	<div id="page_life">
-		<!--I am using the header element to display the most important heading of my page.-->
-		<header>
+  <body>
+    <div id="page_life">
+      <!--I am using the header element to display the most important heading of my page.-->
+      <header>
+        <!--the nav bar contains the main navigation bar on top of the page. It includes an unordered list of elements -->
+        <nav class="container_nav">
+          <label for="hamburger">&#9776;</label>
+          <input type="checkbox" id="hamburger" />
+          <ul>
+            <li><a href="index.html" data-hover="Home">Home</a></li>
+            <!--the <li> element class="dropdown" contain a nested unordered list of elements. This, with the help of cs, creates the dropdown effect-->
+            <li class="dropdown">
+              <a href="life.html" data-hover="My father's ">My father's ⯆</a>
+              <ul class="dropdown_content">
+                <li><a href="life.html">Life</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="job.html">Job</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="aboutMe.html" data-hover="About ">About ⯆</a>
+              <ul class="dropdown_content">
+                <li><a href="aboutMe.html">About me</a></li>
+                <li><a href="references.html">References</a></li>
+                <li><a href="contact.html">Contact me</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </header>
 
-			<!--the nav bar contains the main navigation bar on top of the page. It includes an unordered list of elements -->
-			<nav class="container_nav">
-				<label for="hamburger">&#9776;</label>
-				<input type="checkbox" id="hamburger"/>
-				<ul>
-					<li><a href="index.html" data-hover="Home">Home</a></li>
-					<!--the <li> element class="dropdown" contain a nested unordered list of elements. This, with the help of cs, creates the dropdown effect-->
-					<li class="dropdown">
-						<a href="life.html" data-hover="My father's ">My father's ⯆</a>
-						<ul class="dropdown_content">
-							<li><a href="life.html">Life</a></li>
-							<li><a href="hobbies.html">Hobbies</a></li>
-							<li><a href="job.html">Job</a></li>
-						</ul>
-					</li>
-					<li class="dropdown">
-						<a href="aboutMe.html" data-hover="About ">About ⯆</a>
-						<ul class="dropdown_content">
-							<li><a href="aboutMe.html">About me</a></li>
-							<li><a href="references.html">References</a></li>
-							<li><a href="contact.html">Contact me</a></li>
-						</ul>
-					</li>
-				</ul>
-			</nav>
-		</header>
+      <div class="wrap_container">
+        <section>
+          <div class="container_main_life">
+            <div class="heading_page">
+              <h2>My father's Life</h2>
+            </div>
+            <div class="text_life">
+              <h1>Short biography</h1>
+              <p>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+                quae ab illo inventore veritatis et quasi architecto beatae
+                vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia
+                voluptas sit aspernatur aut odit aut fugit, sed quia
+                consequuntur magni dolores eos qui ratione voluptatem sequi
+                nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor
+                sit amet, consectetur, adipisci velit, sed quia non numquam eius
+                modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+                voluptatem. Ut enim ad minima veniam, quis nostrum
+                exercitationem ullam corporis suscipit laboriosam, nisi ut
+                aliquid ex ea commodi consequatur? Quis autem vel eum iure
+                reprehenderit qui in ea voluptate velit esse quam nihil
+                molestiae consequatur, vel illum qui dolorem eum fugiat quo
+                voluptas nulla pariatur?
+              </p>
+            </div>
+          </div>
+        </section>
 
+        <!--Aside is used to display all my pictures at the right-hand side of the screen.-->
+        <aside>
+          <div class="images_life">
+            <div>
+              <img
+                src="Images/Photo_fountain.jpg"
+                alt="Photo of my father and I when I was 1 years old in Cattolica (italy) sit on the border of a fountain"
+              />
+            </div>
+            <div>
+              <img
+                src="Images/Photo_sleep.jpg"
+                alt="Photo of me when I was a baby and I was sleeping on my father shoulder. My father was sleeping too."
+              />
+            </div>
+            <div>
+              <img
+                src="Images/Photo_park.jpg"
+                alt="Photo of my father and I in the park"
+              />
+            </div>
+            <div>
+              <img
+                src="Images/Photo_Paris.jpg"
+                alt="Photo of my brother, my father and I in Paris"
+              />
+            </div>
+            <div>
+              <img
+                src="Images/Photo_christmas.JPG"
+                alt="Photo of my father and I at home during christmas"
+              />
+            </div>
+            <div>
+              <img
+                src="Images/Photo_beach.jpg"
+                alt="Photo of my father and I on the beach"
+              />
+            </div>
+            <div>
+              <img
+                src="Images/Photo_Urbino.jpg"
+                alt="Photo and my father and I recently in Urbino, Italy"
+              />
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+    <!--At the end I am using a footer to display authorship and copyrights information, to link the main pages and give some contact info.-->
+    <footer class="main_footer">
+      <div class="footer_name">
+        <p>Deborah Rimei</p>
+        <p>Computing Science</p>
+        <p>Student number: 3015579</p>
+        <a href="https://www.griffith.ie/"
+          ><img
+            src="https://www.griffith.ie/sites/all/themes/griffith/images/xgriffith-logo-white-trans.png.pagespeed.ic.Txm3d4VeuK.webp"
+            alt="Griffith College logo"
+            title="Visit griffith.ie"
+        /></a>
+      </div>
 
-		<div class="wrap_container">
-			<section>
-				<div class="container_main_life">
+      <div class="footer_links">
+        <h6>About</h6>
+        <ul>
+          <li><a href="life.html">My father</a></li>
+          <li><a href="aboutMe.html">About me</a></li>
+          <li><a href="references.html">References</a></li>
+        </ul>
+        <a href="#page_life">Back to the top ⮥</a>
+      </div>
 
-					<div class="heading_page">
-						<h2>My father's Life</h2>
-
-					</div>
-					<div class="text_life">
-						<h1>Short biography</h1>
-						<p>My father Marcello was born on January 19, 1964. He grew up in a small town near Pesaro,
-							Italy. As my grandmother always says to me, he was a good and kind child. He was always
-							helping his parents and loved to spend time listening to his grandmother. Growing up his behave changed, he started skipping school very often and ended up not even finishing secondary school. Despite the very short educational career, he had been great in every job
-							he did. During his first seasonal job he met my mother. They dated for few
-							months but then things did not go too well, they broke up soon after. Few years passed and
-							they started to see each other again. They finally decided to get marry on the 11th October
-							1991. My father really wanted to have a child and, in 1995 he realised his dream. However,
-							soon after my birth, he had few down moments. He started suffering of depression and started
-							gaining a lot of weight. In 1997 things got better. He started gym, quit smoking and
-							dedicated most of his time to me and to the new born, my brother Lorenzo. </p>
-					</div>
-				</div>
-			</section>
-
-			<!--Aside is used to display all my pictures at the right-hand side of the screen.-->
-			<aside>
-				<div class="images_life">
-					<div>
-						<img src="Images/Photo_fountain.jpg" alt="Photo of my father and I when I was 1 years old in Cattolica (italy) sit on the border of a fountain">
-					</div>
-					<div>
-						<img src="Images/Photo_sleep.jpg" alt="Photo of me when I was a baby and I was sleeping on my father shoulder. My father was sleeping too.">
-					</div>
-					<div>
-						<img src="Images/Photo_park.jpg" alt="Photo of my father and I in the park">
-					</div>
-					<div>
-						<img src="Images/Photo_Paris.jpg" alt="Photo of my brother, my father and I in Paris">
-					</div>
-					<div>
-						<img src="Images/Photo_christmas.JPG" alt="Photo of my father and I at home during christmas">
-					</div>
-					<div>
-						<img src="Images/Photo_beach.jpg" alt="Photo of my father and I on the beach">
-					</div>
-					<div>
-						<img src="Images/Photo_Urbino.jpg" alt="Photo and my father and I recently in Urbino, Italy">
-					</div>
-				</div>
-			</aside>
-
-		</div>
-
-
-	</div>
-	<!--At the end I am using a footer to display authorship and copyrights information, to link the main pages and give some contact info.-->
-	<footer class="main_footer">
-		<div class="footer_name">
-			<p> Deborah Rimei</p>
-			<p>Computing Science</p>
-			<p>Student number: 3015579</p>
-			<a href="https://www.griffith.ie/"><img
-					src="https://www.griffith.ie/sites/all/themes/griffith/images/xgriffith-logo-white-trans.png.pagespeed.ic.Txm3d4VeuK.webp"
-					alt="Griffith College logo" title="Visit griffith.ie"></a>
-		</div>
-
-		<div class="footer_links">
-			<h6>About</h6>
-			<ul>
-				<li><a href="life.html">My father</a></li>
-				<li><a href="aboutMe.html">About me</a></li>
-				<li><a href="references.html">References</a></li>
-			</ul>
-			<a href="#page_life">Back to the top ⮥</a>
-		</div>
-
-		<div class=footer_icon>
-			<p>Stay in touch!</p>
-			<a href="https://www.facebook.com/Deborah.Rimei" target="_blank" class="fa fa-facebook"></a>
-			<a href="https://twitter.com/deborahrimei" target="_blank" class="fa fa-twitter"></a>
-			<a href="https://www.linkedin.com/in/deborah-rimei?originalSubdomain=ie" target="_blank"
-				class="fa fa-linkedin"></a>
-			<a href="https://www.instagram.com/deborah_rimei/?hl=en" target="_blank" class="fa fa-instagram"></a>
-			<div class="footer_email">
-				<a href="contact.html"><img src="Images/letter_email.png" alt="image of a letter">Send me an email</a>
-			</div>
-		</div>
-		<div class="footer_bottom">
-			<p>&copy; Copyrights Deborah Rimei</p>
-		</div>
-	</footer>
-</body>
-
+      <div class="footer_icon">
+        <p>Stay in touch!</p>
+        <a
+          href="https://www.facebook.com/Deborah.Rimei"
+          target="_blank"
+          class="fa fa-facebook"
+        ></a>
+        <a
+          href="https://twitter.com/deborahrimei"
+          target="_blank"
+          class="fa fa-twitter"
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/deborah-rimei?originalSubdomain=ie"
+          target="_blank"
+          class="fa fa-linkedin"
+        ></a>
+        <a
+          href="https://www.instagram.com/deborah_rimei/?hl=en"
+          target="_blank"
+          class="fa fa-instagram"
+        ></a>
+        <div class="footer_email">
+          <a href="contact.html"
+            ><img src="Images/letter_email.png" alt="image of a letter" />Send
+            me an email</a
+          >
+        </div>
+      </div>
+      <div class="footer_bottom">
+        <p>&copy; Copyrights Deborah Rimei</p>
+      </div>
+    </footer>
+  </body>
 </html>

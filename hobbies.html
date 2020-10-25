@@ -8,183 +8,215 @@ Deborah Rimei - 3015579
 <!DOCTYPE html>
 <!--here I used the "lang" attribute inside the <html> tag to declare the language of the Webpage-->
 <html lang="en">
-<!--I am using the <head> element to contain information about my page.-->
+  <!--I am using the <head> element to contain information about my page.-->
 
-<head>
-	<meta charset="utf-8">
-	<!--the <title> element contain the information that will be shown on the tab of the browser, making easier to navigate between different webpages-->
-	<title>Deborah Rimei 3015579</title>
+  <head>
+    <meta charset="utf-8" />
+    <!--the <title> element contain the information that will be shown on the tab of the browser, making easier to navigate between different webpages-->
+    <title>MyHero - hobbies</title>
 
-	<!--the meta viewport element gives the browser instruction on how to control the dimensions and scaling of the page. Instructions are given using the method media queries. See the mediaQuery.css to see at which size of the screen the elements change-->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--the meta viewport element gives the browser instruction on how to control the dimensions and scaling of the page. Instructions are given using the method media queries. See the mediaQuery.css to see at which size of the screen the elements change-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	<!--I used the link element to link different document to my HTML. For this assignment I used two stylesheets (one for css layout and the other to manage the responsiveness) and I imported some google fonts. I also used a library for the social media buttons-->
+    <!--I used the link element to link different document to my HTML. For this assignment I used two stylesheets (one for css layout and the other to manage the responsiveness) and I imported some google fonts. I also used a library for the social media buttons-->
 
-	<link rel="stylesheet" type="text/css" href="CSS/Style.css">
-	<link rel="stylesheet" type="text/css" href="CSS/Media_query.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link
-		href="https://fonts.googleapis.com/css?family=Niconne%7CUbuntu%7CMartel+Sans%7CRoboto:300%7CMontserrat&display=swap"
-		rel="stylesheet">
-</head>
-<!--The <body> element contains all information about the website that will be visualised in the main page-->
-<body>
-	<div id="page_hobby">
-		<!--I am using the header element to display the most important heading of my page.-->
-		<header>
+    <link rel="stylesheet" type="text/css" href="CSS/Style.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/Media_query.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Niconne%7CUbuntu%7CMartel+Sans%7CRoboto:300%7CMontserrat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <!--The <body> element contains all information about the website that will be visualised in the main page-->
+  <body>
+    <div id="page_hobby">
+      <!--I am using the header element to display the most important heading of my page.-->
+      <header>
+        <!--the nav bar contains the main navigation bar on top of the page. It includes an unordered list of elements -->
+        <nav class="container_nav">
+          <label for="hamburger">&#9776;</label>
+          <input type="checkbox" id="hamburger" />
+          <ul>
+            <li><a href="index.html" data-hover="Home">Home</a></li>
+            <!--the <li> element class="dropdown" contain a nested unordered list of elements. This, with the help of cs, creates the dropdown effect-->
+            <li class="dropdown">
+              <a href="life.html" data-hover="My father's ">My father's ⯆</a>
+              <ul class="dropdown_content">
+                <li><a href="life.html">Life</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="job.html">Job</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="aboutMe.html" data-hover="About ">About ⯆</a>
+              <ul class="dropdown_content">
+                <li><a href="aboutMe.html">About me</a></li>
+                <li><a href="references.html">References</a></li>
+                <li><a href="contact.html">Contact me</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </header>
 
-				<!--the nav bar contains the main navigation bar on top of the page. It includes an unordered list of elements -->
-				<nav class="container_nav">
-					<label for="hamburger">&#9776;</label>
-					<input type="checkbox" id="hamburger"/>
-					<ul>
-						<li><a href="index.html" data-hover="Home">Home</a></li>
-						<!--the <li> element class="dropdown" contain a nested unordered list of elements. This, with the help of cs, creates the dropdown effect-->
-						<li class="dropdown">
-							<a href="life.html" data-hover="My father's ">My father's ⯆</a>
-							<ul class="dropdown_content">
-								<li><a href="life.html">Life</a></li>
-								<li><a href="hobbies.html">Hobbies</a></li>
-								<li><a href="job.html">Job</a></li>
-							</ul>
-						</li>
-						<li class="dropdown">
-							<a href="aboutMe.html" data-hover="About ">About ⯆</a>
-							<ul class="dropdown_content">
-								<li><a href="aboutMe.html">About me</a></li>
-								<li><a href="references.html">References</a></li>
-								<li><a href="contact.html">Contact me</a></li>
-							</ul>
-						</li>
-					</ul>
-				</nav>
-		</header>
+      <div class="wrap_container">
+        <div class="heading_page">
+          <h2>My father's Hobbies</h2>
+        </div>
+      </div>
 
+      <div id="container_hobbies">
+        <section class="hobby">
+          <h2>Sand Collection</h2>
+          <div class="hobby_inner">
+            <div class="hobby_img">
+              <img
+                src="https://pbs.twimg.com/media/ChFwejDWwAEz3k4.jpg"
+                alt="shelf with little bottles full of sand"
+              />
+            </div>
+            <div class="hobby_txt">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="hobby">
+          <h2>Singing</h2>
+          <div class="hobby_inner">
+            <div class="hobby_img">
+              <img
+                src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                alt="a person on stage singing"
+              />
+            </div>
+            <div class="hobby_txt">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="hobby">
+          <h2>Dancing</h2>
+          <div class="hobby_inner">
+            <div class="hobby_img">
+              <img
+                src="https://images.unsplash.com/photo-1498761560229-39e74b243558?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                alt="couple slow dance"
+              />
+            </div>
+            <div class="hobby_txt">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="hobby">
+          <h2>Technology</h2>
+          <div class="hobby_inner">
+            <div class="hobby_img">
+              <img
+                src="https://images.unsplash.com/photo-1482169704817-5b66aafa1a01?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
+                alt="a man playing with his drone"
+              />
+            </div>
+            <div class="hobby_txt">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
 
-		<div class="wrap_container">
-			<div class="heading_page">
-				<h2>My father's Hobbies</h2>
-			</div>
-		</div>
+    <!--At the end I am using a footer to display authorship and copyrights information, to link the main pages and give some contact info.-->
+    <footer class="main_footer">
+      <div class="footer_name">
+        <p>Deborah Rimei</p>
+        <p>Computing Science</p>
+        <p>Student number: 3015579</p>
+        <a href="https://www.griffith.ie/"
+          ><img
+            src="https://www.griffith.ie/sites/all/themes/griffith/images/xgriffith-logo-white-trans.png.pagespeed.ic.Txm3d4VeuK.webp"
+            alt="Griffith College logo"
+            title="Visit griffith.ie"
+        /></a>
+      </div>
 
-		<div id="container_hobbies">
-			<section class="hobby">
-				<h2>Sand Collection</h2>
-				<div class="hobby_inner">
-					<div class="hobby_img"><img src="https://pbs.twimg.com/media/ChFwejDWwAEz3k4.jpg"
-							alt="shelf with little bottles full of sand"></div>
-					<div class="hobby_txt">
-						<p>My father for almost 20 years collected sand from beaches located all over
-							the globe.
-							Every time I was inviting my friends over they were always fascinated to see my
-							father's wonder wall with all
-							little labeled jars. From the white and fine sand of Maldives to the black
-							volcanic sand of Stromboli, my father has this and more. Of course and
-							unfortunately, he did not have the opportunity
-							to visit and collect the sand from this stunning places of the world. All my father's friends and co-workers knew about this passione and after a trip were always bringing a bit of sand
-							from their destinations.</p>
-					</div>
-				</div>
-			</section>
-			<section class="hobby">
-				<h2>Singing</h2>
-				<div class="hobby_inner">
-					<div class="hobby_img"><img
-							src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
-							alt="a person on stage singing">
-					</div>
-					<div class="hobby_txt">
-						<p>My father loves singing. And I admit he is pretty good too. I remember how we were
-							spending our
-							evening few years ago. My father had found a a karaoke software for the old
-							Windows95. We were passing hours singing out loud. He also performed few times in
-							front of
-							an audience. Well, he performed mostly the holiday resorts stages were
-							we were spending few weeks each year during summer. Still, people always seems to
-							appreciate his voice. The last
-							time he performed was at the wedding of his boss. He singed “My Way” of Frank
-							Sinatra. I always get emotional when I hear him singing that song. </p>
-					</div>
-				</div>
-			</section>
-			<section class="hobby">
-				<h2>Dancing</h2>
-				<div class="hobby_inner">
-					<div class="hobby_img"><img
-							src="https://images.unsplash.com/photo-1498761560229-39e74b243558?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
-							alt="couple slow dance">
-					</div>
-					<div class="hobby_txt">
-						<p>When the music starts playing my father is the first that starts moving his body. He
-							loves any patners dance, from salsa to the passionate argentine Tango. Many times,
-							especially during festivals or on special occasions my father asked me to go dance
-							with
-							him. I always denied, maybe to shy to dance in front of
-							all people. I a bit regret those moment knowing that it would make my father
-							extremely happy.</p>
-					</div>
-				</div>
-			</section>
-			<section class="hobby">
-				<h2>Technology</h2>
-				<div class="hobby_inner">
-					<div class="hobby_img"><img
-							src="https://images.unsplash.com/photo-1482169704817-5b66aafa1a01?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
-							alt="a man playing with his drone">
-					</div>
-					<div class="hobby_txt">
-						<p>When new technological devices were launched to the market my father got crazy
-							for them. He started buying different household appliances to synchronized
-							lights, to fountain speakers. The more absurd it was, more was the chance that he would
-							buy it. Last
-							Christmas he purchased Alexa, the virtual assistant of Amazon. You
-							had to see his face when he showed me how he could turn on and off the tree
-							lights just asking the device to do so. Similar to a child when receives
-							a new lego set.</p>
-					</div>
-				</div>
-			</section>
+      <div class="footer_links">
+        <h6>About</h6>
+        <ul>
+          <li><a href="life.html">My father</a></li>
+          <li><a href="aboutMe.html">About me</a></li>
+          <li><a href="references.html">References</a></li>
+        </ul>
+        <a href="#page_hobby">Back to the top ⮥</a>
+      </div>
 
-		</div>
-	</div>
-
-
-		<!--At the end I am using a footer to display authorship and copyrights information, to link the main pages and give some contact info.-->	
-		<footer class="main_footer">
-			<div class="footer_name">
-				<p> Deborah Rimei</p>
-				<p>Computing Science</p>
-				<p>Student number: 3015579</p>
-				<a href="https://www.griffith.ie/"><img
-						src="https://www.griffith.ie/sites/all/themes/griffith/images/xgriffith-logo-white-trans.png.pagespeed.ic.Txm3d4VeuK.webp"
-						alt="Griffith College logo" title="Visit griffith.ie"></a>
-			</div>
-		
-			<div class="footer_links">
-				<h6>About</h6>
-				<ul>
-					<li><a href="life.html">My father</a></li>
-					<li><a href="aboutMe.html">About me</a></li>
-					<li><a href="references.html">References</a></li>
-				</ul>
-				<a href="#page_hobby">Back to the top ⮥</a>
-			</div>
-		
-			<div class=footer_icon>
-				<p>Stay in touch!</p>
-				<a href="https://www.facebook.com/Deborah.Rimei" target="_blank" class="fa fa-facebook"></a>
-				<a href="https://twitter.com/deborahrimei" target="_blank" class="fa fa-twitter"></a>
-				<a href="https://www.linkedin.com/in/deborah-rimei?originalSubdomain=ie" target="_blank" class="fa fa-linkedin"></a>
-				<a href="https://www.instagram.com/deborah_rimei/?hl=en" target="_blank" class="fa fa-instagram"></a>
-				<div class="footer_email">
-					<a href="contact.html"><img src="Images/letter_email.png" alt="image of a letter">Send me an email</a></div>
-			</div>
-			<div class="footer_bottom">
-				<p>&copy; Copyrights Deborah Rimei</p>
-			</div>
-		</footer>
-
-
-</body>
-
+      <div class="footer_icon">
+        <p>Stay in touch!</p>
+        <a
+          href="https://www.facebook.com/Deborah.Rimei"
+          target="_blank"
+          class="fa fa-facebook"
+        ></a>
+        <a
+          href="https://twitter.com/deborahrimei"
+          target="_blank"
+          class="fa fa-twitter"
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/deborah-rimei?originalSubdomain=ie"
+          target="_blank"
+          class="fa fa-linkedin"
+        ></a>
+        <a
+          href="https://www.instagram.com/deborah_rimei/?hl=en"
+          target="_blank"
+          class="fa fa-instagram"
+        ></a>
+        <div class="footer_email">
+          <a href="contact.html"
+            ><img src="Images/letter_email.png" alt="image of a letter" />Send
+            me an email</a
+          >
+        </div>
+      </div>
+      <div class="footer_bottom">
+        <p>&copy; Copyrights Deborah Rimei</p>
+      </div>
+    </footer>
+  </body>
 </html>

@@ -8,195 +8,295 @@ Deborah Rimei - 3015579
 <!DOCTYPE html>
 <!--here I used the "lang" attribute inside the <html> tag to declare the language of the Webpage-->
 <html lang="en">
-<!--I am using the <head> element to contain information about my page.-->
+  <!--I am using the <head> element to contain information about my page.-->
 
-<head>
-	<meta charset="utf-8">
-	<!--the <title> element contain the information that will be shown on the tab of the browser, making easier to navigate between different webpages-->
-	<title>Deborah Rimei 3015579</title>
+  <head>
+    <meta charset="utf-8" />
+    <!--the <title> element contain the information that will be shown on the tab of the browser, making easier to navigate between different webpages-->
+    <title>MyHero - homepage</title>
 
-	<!--the meta viewport element gives the browser instruction on how to control the dimensions and scaling of the page. Instructions are given using the method media queries. See the mediaQuery.css to see at which size of the screen the elements change-->
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--the meta viewport element gives the browser instruction on how to control the dimensions and scaling of the page. Instructions are given using the method media queries. See the mediaQuery.css to see at which size of the screen the elements change-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-	<!--I used the link element to link different document to my HTML. For this assignment I used two stylesheets (one for css layout and the other to manage the responsiveness) and I imported some google fonts. I also used a library for the social media buttons-->
-	<link rel="stylesheet" type="text/css" href="CSS/Style.css">
-	<link rel="stylesheet" type="text/css" href="CSS/Media_query.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link
-		href="https://fonts.googleapis.com/css?family=Niconne%7CUbuntu%7CMartel+Sans%7CRoboto:300%7CMontserrat&display=swap"
-		rel="stylesheet">
-</head>
+    <!--I used the link element to link different document to my HTML. For this assignment I used two stylesheets (one for css layout and the other to manage the responsiveness) and I imported some google fonts. I also used a library for the social media buttons-->
+    <link rel="stylesheet" type="text/css" href="CSS/Style.css" />
+    <link rel="stylesheet" type="text/css" href="CSS/Media_query.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Niconne%7CUbuntu%7CMartel+Sans%7CRoboto:300%7CMontserrat&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<!--The <body> element contains all information about the website that will be visualised in the main page-->
+  <!--The <body> element contains all information about the website that will be visualised in the main page-->
 
-<body>
-	<!--I wrapped all the visible page in a div element with class="page"-->
-	<div id="page">
-		<!--I am using the header element to display the most important heading of my page.-->
-		<header>
+  <body>
+    <!--I wrapped all the visible page in a div element with class="page"-->
+    <div id="page">
+      <!--I am using the header element to display the most important heading of my page.-->
+      <header>
+        <!--the nav bar contains the main navigation bar on top of the page. It includes an unordered list of elements -->
+        <nav class="container_nav">
+          <label for="hamburger">&#9776;</label>
+          <input type="checkbox" id="hamburger" />
+          <ul>
+            <li><a href="index.html" data-hover="Home">Home</a></li>
+            <!--the <li> element class="dropdown" contain a nested unordered list of elements. This, with the help of cs, creates the dropdown effect-->
+            <li class="dropdown">
+              <a href="life.html" data-hover="My father's ">My father's ⯆</a>
+              <ul class="dropdown_content">
+                <li><a href="life.html">Life</a></li>
+                <li><a href="hobbies.html">Hobbies</a></li>
+                <li><a href="job.html">Job</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="aboutMe.html" data-hover="About ">About ⯆</a>
+              <ul class="dropdown_content">
+                <li><a href="aboutMe.html">About me</a></li>
+                <li><a href="references.html">References</a></li>
+                <li><a href="contact.html">Contact me</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
 
-			<!--the nav bar contains the main navigation bar on top of the page. It includes an unordered list of elements -->
-			<nav class="container_nav">
-				<label for="hamburger">&#9776;</label>
-				<input type="checkbox" id="hamburger"/>
-				<ul>
-					<li><a href="index.html" data-hover="Home">Home</a></li>
-					<!--the <li> element class="dropdown" contain a nested unordered list of elements. This, with the help of cs, creates the dropdown effect-->
-					<li class="dropdown">
-						<a href="life.html" data-hover="My father's ">My father's ⯆</a>
-						<ul class="dropdown_content">
-							<li><a href="life.html">Life</a></li>
-							<li><a href="hobbies.html">Hobbies</a></li>
-							<li><a href="job.html">Job</a></li>
-						</ul>
-					</li>
-					<li class="dropdown">
-						<a href="aboutMe.html" data-hover="About ">About ⯆</a>
-						<ul class="dropdown_content">
-							<li><a href="aboutMe.html">About me</a></li>
-							<li><a href="references.html">References</a></li>
-							<li><a href="contact.html">Contact me</a></li>
-						</ul>
-					</li>
-				</ul>
-			</nav>
+        <!--I created this div inside the header to contain the background and the main title-->
+        <div class="heading_title">
+          <!--every picture has an alt attribute that provides info of the img in case the user for some reason cannot view it and a title element that refer to the author and the website from where the pic is from-->
+          <img
+            src="Images/figure_header.png"
+            alt="silhouette of father and baby"
+            title="Photo by Ante Hamersmit on Unsplash"
+          />
+          <div class="txt_title">
+            <h1>
+              To the man that inspired me to be the person I am today.<span
+                >My father.</span
+              >
+            </h1>
+          </div>
+        </div>
+      </header>
 
-			<!--I created this div inside the header to contain the background and the main title-->
-			<div class="heading_title">
-				<!--every picture has an alt attribute that provides info of the img in case the user for some reason cannot view it and a title element that refer to the author and the website from where the pic is from-->
-				<img src="Images/figure_header.png" alt="silhouette of father and baby"
-					title="Photo by Ante Hamersmit on Unsplash">
-				<div class="txt_title">
-					<h1>To the man that inspired me to be the person I am today.<span>My father.</span> </h1>
+      <!--this div element wrap all the rest of the page after the header.-->
+      <div class="container_home">
+        <!--the first section of the page includes a header and a paragraph-->
+        <section class="item_home">
+          <h3>My father, my hero</h3>
+          <p>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+            quae ab illo inventore veritatis et quasi architecto beatae vitae
+            dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+            aspernatur aut odit aut fugit, sed quia consequuntur magni dolores
+            eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
+            qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit,
+            sed quia non numquam eius modi tempora incidunt ut labore et dolore
+            magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
+            nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut
+            aliquid ex ea commodi consequatur? Quis autem vel eum iure
+            reprehenderit qui in ea voluptate velit esse quam nihil molestiae
+            consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla
+            pariatur?
+          </p>
+        </section>
 
-				</div>
-			</div>
-		</header>
+        <!--this div element contains the second part of the page.-->
+        <div id="container_thankyou">
+          <!--I used the div class="container_item" to contain a single section element with its header, paragraph and image. I choose this syntax for a better result with css-->
+          <div class="container_item">
+            <section class="item">
+              <!--the header is wrapped inside a div element to separate it from the paragraph and image-->
+              <div class="item_head">
+                <h2>
+                  Thank you for...<span
+                    >teaching me to respect other people</span
+                  >
+                </h2>
+              </div>
+              <p>
+                <img
+                  src="Images/Hand_respect.jpg"
+                  alt="a father hand and the hand of his baby"
+                  title="Hand-Photo by Liane Metzler on Unsplash"
+                  class="image_right"
+                />One of the most important lesson I have learned from my father
+                is how to respect the different opinions of other people and do
+                not take it personally if someone does not agree with me on
+                something.
+              </p>
+            </section>
+          </div>
+          <!--i used a line to visually separate each section-->
+          <hr class="hr-text" data-content="Thank you for" />
 
-		<!--this div element wrap all the rest of the page after the header.-->
-		<div class="container_home">
-			<!--the first section of the page includes a header and a paragraph-->
-			<section class="item_home">
-				<h3>My father, my hero</h3>
-				<p>My father has always been a central figure in my life. He thought me how to be a good person and what
-					are the values of the family. When I was a child I always considered my father as a hero and I had
-					in plan to find a husband exactly like him. Naturally, the relationship over the years changed and
-					took a dangerous turn during my adolescence. I remember staying days or even weeks without talking
-					to each other. Growing up and looking back at those moment I feel sorry to have treated him that
-					way, and only now I realise how we are alike and what a good person he is. He gave me precious insights that made me the person I am today. For this reason, I would like to thank him for all he did for me. </p>
-			</section>
+          <div class="container_item">
+            <section class="item">
+              <div class="item_head">
+                <h2>
+                  Thank you for...<span>
+                    bringing me to beautiful places of the world</span
+                  >
+                </h2>
+              </div>
+              <p>
+                <img
+                  src="Images/Travel_fs.jpg"
+                  alt="a girl on the piggyback of his father looking at the sea"
+                  title="Photo by Brittani Burns on Unsplash"
+                  class="image_left"
+                />Together we have seen many places around the world, from the
+                pyramids in Egypt to the mosque in Instanbul. From all the
+                journeys we had I have wonderful memories that will stay with me
+                forever. My father loves to travel and discover new cultures and
+                places. You can notice his passion when, during a trip, he takes
+                his lonely planet and starts reading out loud the description of
+                the places.
+              </p>
+            </section>
+          </div>
 
-			<!--this div element contains the second part of the page.-->
-			<div id="container_thankyou">
-				<!--I used the div class="container_item" to contain a single section element with its header, paragraph and image. I choose this syntax for a better result with css-->
-				<div class="container_item">
-					<section class="item">
-						<!--the header is wrapped inside a div element to separate it from the paragraph and image-->
-						<div class="item_head">
-							<h2>Thank you for...<span>teaching me to respect other people</span></h2>
-						</div>
-						<p><img src="Images/Hand_respect.jpg" alt="a father hand and the hand of his baby"
-								title="Hand-Photo by Liane Metzler on Unsplash" class="image_right">One of the most
-							important lesson I have learned from my father is how to respect the different opinions of
-							other people and do not take it personally if someone does not agree with me on something.
-						</p>
-					</section>
-				</div>
-				<!--i used a line to visually separate each section-->
-				<hr class="hr-text" data-content="Thank you for">
+          <hr />
 
-				<div class="container_item">
-					<section class="item">
-						<div class="item_head">
-							<h2>Thank you for...<span> bringing me to beautiful places of the world</span></h2>
-						</div>
-						<p><img src="Images/Travel_fs.jpg"
-								alt="a girl on the piggyback of his father looking at the sea"
-								title="Photo by Brittani Burns on Unsplash" class="image_left">Together we have seen
-							many places around the world, from the pyramids in Egypt to the mosque in Instanbul. From all the journeys we had I have wonderful memories that will stay with me forever. My father loves to travel and discover new cultures and places. You can notice his passion when, during a trip, he takes his lonely planet and starts reading out loud the description of the places.</p>
-					</section>
-				</div>
+          <div class="container_item">
+            <section class="item">
+              <div class="item_head">
+                <h2>
+                  Thank you for...<span>
+                    teaching me that reading books is important</span
+                  >
+                </h2>
+              </div>
+              <p>
+                <img
+                  src="Images/Book.jpg"
+                  alt="the silhouette of a boy that is reading a book under a tree"
+                  title="Book-Photo by Aaron Burden on Unsplash"
+                  class="image_right"
+                />As a child I had never liked reading much, but growing up my
+                father taught me that reading was really important for keeping
+                my brain active, discover new vocabularies and learning from
+                people smarter than me. Only after high school I understood what
+                he meant and I started reading more.
+              </p>
+            </section>
+          </div>
 
-				<hr>
+          <hr />
 
-				<div class="container_item">
-					<section class="item">
-						<div class="item_head">
-							<h2>Thank you for...<span> teaching me that reading books is important</span></h2>
-						</div>
-						<p><img src="Images/Book.jpg" alt="the silhouette of a boy that is reading a book under a tree"
-								title="Book-Photo by Aaron Burden on Unsplash" class="image_right">As a child I had
-							never liked reading much, but growing up my father taught me that reading was really
-							important for keeping my brain active, discover new vocabularies and learning from people smarter than me. Only after high school I understood what he meant and I started reading more.</p>
-					</section>
-				</div>
+          <div class="container_item">
+            <section class="item">
+              <div class="item_head">
+                <h2>
+                  Thank you for...<span
+                    >teaching me how to be more confident with myself</span
+                  >
+                </h2>
+              </div>
+              <p>
+                <img
+                  src="Images/Confidence.png"
+                  alt="a girl that cover hers eyes with her hands"
+                  title="Photo by bantersnaps on Unsplash"
+                  class="image_left"
+                />Me and my father are quite alike. When he was a child he was
+                very shy and, like me, he often felt uncomfortable to talk to
+                other people. Growing up he built up his confidence and seeing
+                me going through the same struggles, he kindly shared with me
+                few gold advises.
+              </p>
+            </section>
+          </div>
 
-				<hr>
+          <hr />
 
-				<div class="container_item">
-					<section class="item">
-						<div class="item_head">
-							<h2>Thank you for...<span>teaching me how to be more confident with myself</span></h2>
-						</div>
-						<p><img src="Images/Confidence.png" alt="a girl that cover hers eyes with her hands"
-								title="Photo by bantersnaps on Unsplash" class="image_left">Me and my father are quite
-							alike. When he was a child he was very shy and, like me, he often felt uncomfortable to talk
-							to other people. Growing up he built up his confidence and seeing me going through the same
-							struggles, he kindly shared with me few gold advises.</p>
-					</section>
-				</div>
+          <div class="container_item">
+            <section class="item">
+              <div class="item_head">
+                <h2>
+                  Thank you for...<span
+                    >supporting me, whatever decision I make</span
+                  >
+                </h2>
+              </div>
+              <p>
+                <img
+                  src="Images/father_sky.jpg"
+                  alt="Father is throwing his baby in the air"
+                  title="Photo by lauren lulu taylor on Unsplash"
+                  class="image_right"
+                />When, after my solo adventure in Ireland, I decided to quit
+                college and move with my boyfriend to Dublin my father was
+                hearthbroken. Despite the fact that he knew he would see me less
+                often, he did not try to stop me or convinced to stay. He simply
+                told me how sad he was to see me going but at the same time I
+                could count on his full support.
+              </p>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--At the end I am using a footer to display authorship and copyrights information, to link the main pages and give some contact info.-->
+    <footer class="main_footer">
+      <div class="footer_name">
+        <p>Deborah Rimei</p>
+        <p>Computing Science</p>
+        <p>Student number: 3015579</p>
+        <a href="https://www.griffith.ie/"
+          ><img
+            src="https://www.griffith.ie/sites/all/themes/griffith/images/xgriffith-logo-white-trans.png.pagespeed.ic.Txm3d4VeuK.webp"
+            alt="Griffith College logo"
+            title="Visit griffith.ie"
+        /></a>
+      </div>
 
-				<hr>
+      <div class="footer_links">
+        <h6>About</h6>
+        <ul>
+          <li><a href="life.html">My father</a></li>
+          <li><a href="aboutMe.html">About me</a></li>
+          <li><a href="references.html">References</a></li>
+        </ul>
+        <a href="#page">Back to the top ⮥</a>
+      </div>
 
-				<div class="container_item">
-					<section class="item">
-						<div class="item_head">
-							<h2>Thank you for...<span>supporting me, whatever decision I make</span></h2>
-						</div>
-						<p><img src="Images/father_sky.jpg" alt="Father is throwing his baby in the air"
-								title="Photo by lauren lulu taylor on Unsplash" class="image_right">When, after my solo adventure in Ireland, I decided to quit college and move with my boyfriend to Dublin my father was hearthbroken. Despite the fact that he knew he would see me less often, he did not try to stop me or convinced to stay. He simply told me how sad he was to see me going but at the same time I could count on his full support.</p>
-					</section>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!--At the end I am using a footer to display authorship and copyrights information, to link the main pages and give some contact info.-->
-	<footer class="main_footer">
-		<div class="footer_name">
-			<p> Deborah Rimei</p>
-			<p>Computing Science</p>
-			<p>Student number: 3015579</p>
-			<a href="https://www.griffith.ie/"><img
-					src="https://www.griffith.ie/sites/all/themes/griffith/images/xgriffith-logo-white-trans.png.pagespeed.ic.Txm3d4VeuK.webp"
-					alt="Griffith College logo" title="Visit griffith.ie"></a>
-		</div>
-
-		<div class="footer_links">
-			<h6>About</h6>
-			<ul>
-				<li><a href="life.html">My father</a></li>
-				<li><a href="aboutMe.html">About me</a></li>
-				<li><a href="references.html">References</a></li>
-			</ul>
-			<a href="#page">Back to the top ⮥</a>
-		</div>
-
-		<div class=footer_icon>
-			<p>Stay in touch!</p>
-			<a href="https://www.facebook.com/Deborah.Rimei" target="_blank" class="fa fa-facebook"></a>
-			<a href="https://twitter.com/deborahrimei" target="_blank" class="fa fa-twitter"></a>
-			<a href="https://www.linkedin.com/in/deborah-rimei?originalSubdomain=ie" target="_blank"
-				class="fa fa-linkedin"></a>
-			<a href="https://www.instagram.com/deborah_rimei/?hl=en" target="_blank" class="fa fa-instagram"></a>
-			<div class="footer_email">
-				<a href="contact.html"><img src="Images/letter_email.png" alt="image of a letter">Send me an email</a>
-			</div>
-		</div>
-		<div class="footer_bottom">
-			<p>&copy; Copyrights Deborah Rimei</p>
-		</div>
-	</footer>
-
-</body>
-
+      <div class="footer_icon">
+        <p>Stay in touch!</p>
+        <a
+          href="https://www.facebook.com/Deborah.Rimei"
+          target="_blank"
+          class="fa fa-facebook"
+        ></a>
+        <a
+          href="https://twitter.com/deborahrimei"
+          target="_blank"
+          class="fa fa-twitter"
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/deborah-rimei?originalSubdomain=ie"
+          target="_blank"
+          class="fa fa-linkedin"
+        ></a>
+        <a
+          href="https://www.instagram.com/deborah_rimei/?hl=en"
+          target="_blank"
+          class="fa fa-instagram"
+        ></a>
+        <div class="footer_email">
+          <a href="contact.html"
+            ><img src="Images/letter_email.png" alt="image of a letter" />Send
+            me an email</a
+          >
+        </div>
+      </div>
+      <div class="footer_bottom">
+        <p>&copy; Copyrights Deborah Rimei</p>
+      </div>
+    </footer>
+  </body>
 </html>
